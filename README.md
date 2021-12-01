@@ -26,6 +26,7 @@ Repositorio de Github
 | ` nano ` | editor de texto |
 | ` cat ` | abrir texto en terminal y leerlo |
 | ` tail y head ` | leer un texto por secciones |
+| ` less "archivo ` | leer menos |
 | ` shift "\" ` | para poner el simbolo pipe "|" |
 | ` cat "directorio" \| more ` | muestra todo "more pages" |
 | ` grep -r "ejemplo" ` | buscar el texto "ejemplo" en archivos |
@@ -34,21 +35,29 @@ Repositorio de Github
 | ` https://snapcraft.io/"paquete" ` | para isntalar paquetes |
 | ` sudo systemctl restart systemd-resolved.service ` | reiniciar DNS |
 | ` df-h ` | para ver la memoria |
-| ` permisos rwx ` | permiso para leer, escribir y ejecutar |
-| ` permiso r-x ` | permiso para leer y ejecutar |
-| ` permiso r-- ` | permiso para solo leer |
+| ` chmod rwx "archivo" ` | permiso para leer, escribir y ejecutar |
+| ` chmod r-x "archivo" ` | permiso para leer y ejecutar |
+| ` chmod r-- "archivo" ` | permiso para solo leer |
 | ` du -h "archivo" ` | tamaño del archivo |
 | ` stat "archivo" ` | fecha de creacion e info del archivo |
 | ` file "archivo" ` | tipo de archivo |
 | ` chown user1 "archivo" ` | propietario y grupo |
 | ` touch "archivo" ` | crear archivo |
 | ` "etc/fstab" ` | montaje de dispositivo |
-| `  sudo apt install gparted ` | app para administar las particiones del disco |
-| `  sudo apt instal "ejemplo" ` | instlacion de aplicaciones |
-| ` kill -9 $PID ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
-| ` ` |  |
+| ` sudo apt install gparted ` | app para administar las particiones del disco |
+| ` sudo apt instal "ejemplo" ` | instlacion de aplicaciones |
+| ` kill -9 $PID ` | eliminar procesos en segundo plano|
+| ` ps -aux ` | estado del proceso corriendo  |
+| ` bash "archivo.sh ` | correr archivo bash |
+| ` "en bash" - echo "texto" ` | mostrar texto |
+| ` cp "archivo1" "arhcivo2" ` | copiar archivo |
+| ` mv "archivo" ` | mover archivo |
+| ` rm "archivo" ` | eliminar archivo |
+| ` mkdir "nombre" ` | crear una carpeta |
+| ` scp ` | protocolo de transferencia de archivos en red |
+| ` curl ` | Client URL, transferir data desde el url |
+| ` wc "-l / -w" ` | contador de palabras, caracteres o lineas |
+| ` find "directorio" -name "nombre" ` | buscar archivo en directorio |
+| ` sudo apt install pdfunite ` | instalar herramienta para pdfs |
+| ` pdfunite "archivo1" "archivo2" "archivo3" "archivo4" ` | unir pdfs |
+| ` pdfseperate -f 1 -l 5 "archivo1" resultado_%d.pdf` | seperara pdf en lineas y guardarlo|
