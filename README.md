@@ -60,4 +60,21 @@ Repositorio de Github
 | ` find "directorio" -name "nombre" ` | buscar archivo en directorio |
 | ` sudo apt install pdfunite ` | instalar herramienta para pdfs |
 | ` pdfunite "archivo1" "archivo2" "archivo3" "archivo4" ` | unir pdfs |
-| ` pdfseperate -f 1 -l 5 "archivo1" resultado_%d.pdf` | seperara pdf en lineas y guardarlo|
+DOCKER:
+| ` pdfseperate -f 1 -l 5 "archivo1" resultado_%d.pdf` | seperara pdf en lineas y guardarlo |
+| ` sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common ` | instalar paquetes para docker |
+| ` curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - ` | Clave GPG oficial de docker |
+| ` sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" ` | Repositorio oficial de Docker |
+| ` sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose ` | Instalar Docker |
+| ` sudo usermod -aG docker ${USER}` y ` su - ${USER}
+` | Usar docker sin sudo |
+| ` sudo docker run hello-world ` | Comprobacion de funcionamiento |
+| ` ` | |
+| ` ` | |
+| ` ` | |
+| ` ` | |
+| ` ` | |
+
+
+
+
