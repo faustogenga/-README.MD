@@ -60,20 +60,25 @@ Repositorio de Github
 | ` find "directorio" -name "nombre" ` | buscar archivo en directorio |
 | ` sudo apt install pdfunite ` | instalar herramienta para pdfs |
 | ` pdfunite "archivo1" "archivo2" "archivo3" "archivo4" ` | unir pdfs |
-DOCKER:
 | ` pdfseperate -f 1 -l 5 "archivo1" resultado_%d.pdf` | seperara pdf en lineas y guardarlo |
+DOCKER:
 | ` sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common ` | instalar paquetes para docker |
 | ` curl -fsSL https://download.docker.com/linux/debian/gpg \| sudo apt-key add - ` | Clave GPG oficial de docker |
 | ` sudo add-apt-repository \"deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable\" ` | Repositorio oficial de Docker |
 | ` sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose ` | Instalar Docker |
 | ` sudo usermod -aG docker ${USER}` y ` su - ${USER}` | Usar docker sin sudo |
 | ` sudo docker run hello-world ` | Comprobacion de funcionamiento |
-| ` ` | |
-| ` ` | |
-| ` ` | |
-| ` ` | |
-| ` ` | |
-
-
-
-
+| ` sudo systemctl start docker ` y `sudo systemctl enable docker`  | Iniciar el Daemon |
+| `  docker search ubuntu ` | Buscar imagenes- ejemplo ubuntu|
+| ` docker pull \"imagen\" ` | Instalar imagenes en docker |
+| ` sudo docker images ` | Ver imagenes instaladas |
+| ` sudo docker run -it \"ubuntu\" ` | Iniciar una instancia de la imagen graficamente -ejemplo ubuntu|
+| ` sudo docker ps -a ` | Ver estado de las imagenes |
+| ` sudo docker start \"ContainerID\"  ` | iniciar contenedro |
+| ` sudo stop \"ContainerID\"` | Detener contenedor |
+| ` sudo docker login -u USUARIODOCKERHUB ` | Login en Docker |
+| ` a. sudo docker commit \"ContainerID\"` | Hacer un commit |
+| ` docker rmi Image ` | Eliminar imagenes de docker |
+| ` docker rm ID ` | Eliminar contenedores |
+| ` docker run --rm image_name ` | Eliminar contenedor después de cerrado |
+| ` sudo docker rm $(sudo docker ps -a -f status=exited -q) ` | Eliminar todos los contenedores con estado “Exited (0)” |
