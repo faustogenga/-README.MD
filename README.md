@@ -70,14 +70,14 @@ DOCKER:
 | ` sudo docker run hello-world ` | Comprobacion de funcionamiento |
 | ` sudo systemctl start docker ` y `sudo systemctl enable docker`  | Iniciar el Daemon |
 | `  docker search ubuntu ` | Buscar imagenes- ejemplo ubuntu|
-| ` docker pull \"imagen\" ` | Instalar imagenes en docker |
+| ` docker pull "imagen" ` | Instalar imagenes en docker |
 | ` sudo docker images ` | Ver imagenes instaladas |
-| ` sudo docker run -it \"ubuntu\" ` | Iniciar una instancia de la imagen graficamente -ejemplo ubuntu|
+| ` sudo docker run -it "ubuntu" ` | Iniciar una instancia de la imagen graficamente -ejemplo ubuntu|
 | ` sudo docker ps -a ` | Ver estado de las imagenes |
-| ` sudo docker start \"ContainerID\"  ` | iniciar contenedro |
-| ` sudo stop \"ContainerID\"` | Detener contenedor |
+| ` sudo docker start "ContainerID"  ` | iniciar contenedro |
+| ` sudo stop "ContainerID" ` | Detener contenedor |
 | ` sudo docker login -u USUARIODOCKERHUB ` | Login en Docker |
-| ` a. sudo docker commit \"ContainerID\"` | Hacer un commit |
+| ` a. sudo docker commit "ContainerID" ` | Hacer un commit |
 | ` docker rmi Image ` | Eliminar imagenes de docker |
 | ` docker rm ID ` | Eliminar contenedores |
 | ` docker run --rm image_name ` | Eliminar contenedor después de cerrado |
