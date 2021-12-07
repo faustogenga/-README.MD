@@ -27,7 +27,7 @@ Repositorio de Github
 | ` cat ` | abrir texto en terminal y leerlo |
 | ` tail y head ` | leer un texto por secciones |
 | ` less "archivo ` | leer menos |
-| ` shift "\" ` | para poner el simbolo pipe "|" |
+| ` shift "\" ` | para poner el simbolo pipe "\|" |
 | ` cat "directorio" \| more ` | muestra todo "more pages" |
 | ` grep -r "ejemplo" ` | buscar el texto "ejemplo" en archivos |
 | ` history ` | historial de comandos que utilize |
